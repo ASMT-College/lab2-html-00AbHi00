@@ -1,0 +1,66 @@
+<!-- Class room code for github 
+    UN2wj16s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-size: 2vh;
+    }
+    fieldset{
+        margin: 30vh 15vw;
+        max-width: 80vw;
+    }
+</style>
+<body>
+
+    <form action="connection/hello.php">
+        <fieldset style="display: flex; align-items: center;flex-direction: column;text-align: center;">
+            <legend>
+                Form
+            </legend>
+            <label for="f_name">Name:</label>
+            <input type="text" id="" name="f_name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="" name="email">
+
+            <label for="Password" id="pw">Password:</label>
+            <input type="Password" id="pw" name="Password">
+            
+            <label for="Password">Date:</label>
+            <input type="date">
+            <div class="center">
+                <input type="radio" id="gender-male">
+                <label for="gender-male">    Male
+                </label>    
+                <input type="radio" id="gender-female">
+                <label for="gender-female">    Female
+                </label>    
+            
+        </div>
+            <select>    
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <input type="file">
+            <button type="submit">Submit</button>
+            <button onclick="seepw()"> See Password</button>
+        </fieldset>
+    </form>
+</body>
+<script>
+    function seepw()
+    {
+        pw=document.getElementById("pw").value
+        console.log(pw)
+    }
+</script>
+</html>
